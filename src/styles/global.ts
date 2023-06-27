@@ -22,11 +22,14 @@ export const GlobalStyle = createGlobalStyle`
     font: 400 1rem 'Roboto', sans-serif;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   .container {
     width: 100%;
     max-width: 70rem;
     margin: 0 auto;
     padding: 0 1.5rem;
   }
-
 `

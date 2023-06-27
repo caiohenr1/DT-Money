@@ -5,7 +5,7 @@ export const SumarryContainer = styled.section`
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
-  margin-top: -5rem;
+  margin-top: -5rem !important;
 `
 
 interface SumarryCardProps {
@@ -17,21 +17,20 @@ export const SumarryCard = styled.div<SumarryCardProps>`
   background: ${props => props.theme["gray-600"]};
   padding: 2rem;
 
-  ${ ({ theme , variant }) => variant === "green" && css`
+  ${({ theme, variant }) => variant === "green" && css`
     background: ${theme["green-700"]};
   ` }
 
-  > header {
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: ${props => props.theme["gray-300"]};
   }
+  
   strong {
       display: block;
       margin-top: 1rem;
       font-size: 2rem;
     }
-
-
 `

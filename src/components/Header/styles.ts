@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   background: ${props => props.theme["gray-900"]};
   padding: 2.5rem 0 7.5rem;
-
 `
 
 export const HeaderContent = styled.div`
@@ -26,7 +25,6 @@ export const TransactionButton = styled.button`
   font-weight: bold;
   background: ${props => props.theme["green-500"]};
   color: ${props => props.theme.white};
-  cursor: pointer;
   transition: background-color 0.2s;
 
   &:hover {

@@ -6,8 +6,8 @@ import { Transactions } from "./pages/Transactions"
 export const App = ( ) => {
   return (
    <ThemeProvider theme={defaultTheme}>
+     <GlobalStyle />
     <Transactions />
-    <GlobalStyle />
    </ThemeProvider>
   )
 }
